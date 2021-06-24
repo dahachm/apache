@@ -54,7 +54,15 @@ $ su postgres -c "psql"
 ```
 
 ```
-=# CREATE TABLE IPSec
+=# CREATE TABLE IPSec (ID SERIAL PRIMARY KEY, name CHARACTER VARYING(30),cyphr_alg CHARACTER VARYING(20), auth_alg CHARACTER VARYING(30), hash_func CHARACTER VARYING(30));
+=# INSERT INTO IPSec VALUES(1, 'КриптоПро IPSec', 'ГОСТ 28147-89', 'ГОСТ 34.10-2001', 'ГОСТ 34.11-94');
+=# INSERT INTO IPSec VALUES(2, 'IPSec', 'AES, 3DES', 'IKEv2', 'SHA2');
+```
+
+```
+=# 
+=# 
+=# 
 ```
 
 ### group1.com
